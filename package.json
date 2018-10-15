@@ -23,10 +23,9 @@
   },
   "homepage": "https://github.com/writetome51/array-get-between#readme",
   "devDependencies": {
-    "@writetome51/arrays-match": "latest"
   },
   "dependencies": {
     "basic-data-handling": "latest",
-    "@writetome51/array-and-index-validation": "latest"
+    "@writetome51/array-get-adjacent-at": "latest"
   }
 }

@@ -1,15 +1,15 @@
-import { getAdjacentAt } from './getAdjacentAt';
+import { getAdjacentAt } from '@writetome51/array-get-adjacent-at/getAdjacentAt';
 import { errorIfNotInteger } from 'basic-data-handling/errorIfNotInteger';
 
 
-export function getBetween(numItemsToKeepAtEachEnd, array): any[] {
-	errorIfNotInteger(numItemsToKeepAtEachEnd);
-	if (numItemsToKeepAtEachEnd < 1) throw new Error('The number of items to' +
+export function getBetween(numItemsToIgnoreAtEachEnd, array): any[] {
+	errorIfNotInteger(numItemsToIgnoreAtEachEnd);
+	if (numItemsToIgnoreAtEachEnd < 1) throw new Error('The number of items to' +
 		' preserve at each end must be at least 1');
-	if ((numItemsToKeepAtEachEnd * 2) > array.length) {
+	if ((numItemsToIgnoreAtEachEnd * 2) >= array.length) {
 		throw new Error('The number of items to preserve multiplied by 2' +
-			' exceeds the length of the array. This is not allowed.');
+			' is equal to or exceeds the length of the array. This is not allowed.');
 	}
-	let numToGet = array.length - (numItemsToKeepAtEachEnd * 2);
-	return getAdjacentAt(numItemsToKeepAtEachEnd, numToGet, array);
+	let numToGet = array.length - (numItemsToIgnoreAtEachEnd * 2);
+	return getAdjacentAt(numItemsToIgnoreAtEachEnd, numToGet, array);
 }
