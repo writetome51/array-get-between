@@ -1,4 +1,4 @@
-import { getAdjacentAt } from '@writetome51/array-get-adjacent-at/getAdjacentAt';
+import { getAdjacentAt } from '@writetome51/array-get-adjacent-at';
 import { errorIfNotInteger } from 'basic-data-handling/errorIfNotInteger';
 
 
