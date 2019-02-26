@@ -2,9 +2,10 @@
   "name": "@writetome51/array-get-between",
   "version": "1.0.2",
   "description": "Function returns middle section of array",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,7 @@
   "homepage": "https://github.com/writetome51/array-get-between#readme",
   "devDependencies": {},
   "dependencies": {
-    "basic-data-handling": "~1.0.13",
-    "@writetome51/array-get-adjacent-at": "~1.0.2"
+    "basic-data-handling": "~1.0.15",
+    "@writetome51/array-get-adjacent-at": "~1.0.3"
   }
 }

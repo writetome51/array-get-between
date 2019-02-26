@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var getBetween_1 = require("./getBetween");
+var index_1 = require("./index");
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // Test 1:
-var middle = getBetween_1.getBetween(1, arr);
+var middle = index_1.getBetween(1, arr);
 if (middle.length === 8 && middle[0] === 2 && middle[7] === 9)
     console.log('test 1 passed');
 else
@@ -14,13 +14,13 @@ if (arr.length === 10 && arr[0] === 1 && arr[9] === 10)
 else
     console.log('test 2 failed');
 // Test 3:
-middle = getBetween_1.getBetween(2, arr);
+middle = index_1.getBetween(2, arr);
 if (middle.length === 6 && middle[0] === 3 && middle[5] === 8)
     console.log('test 3 passed');
 else
     console.log('test 3 failed');
 // Test 4:
-middle = getBetween_1.getBetween(3, arr);
+middle = index_1.getBetween(3, arr);
 if (middle.length === 4 && middle[0] === 4 && middle[3] === 7)
     console.log('test 4 passed');
 else
@@ -28,7 +28,7 @@ else
 // Test 5:
 var errorTriggered = false;
 try {
-    getBetween_1.getBetween(0, arr);
+    index_1.getBetween(0, arr);
 }
 catch (e) {
     errorTriggered = true;
@@ -41,7 +41,7 @@ else
 // array:
 errorTriggered = false;
 try {
-    getBetween_1.getBetween(5, arr);
+    index_1.getBetween(5, arr);
 }
 catch (e) {
     errorTriggered = true;
@@ -53,7 +53,7 @@ else
 // Test 7: Make sure error triggers if float is passed as first argument:
 errorTriggered = false;
 try {
-    getBetween_1.getBetween(1.0001, arr);
+    index_1.getBetween(1.0001, arr);
 }
 catch (e) {
     errorTriggered = true;
@@ -65,7 +65,7 @@ else
 // Test 8: Make sure error triggers if anything but array is passed as second argument:
 errorTriggered = false;
 try {
-    getBetween_1.getBetween(1, { prop: 1 });
+    index_1.getBetween(1, { prop: 1 });
 }
 catch (e) {
     errorTriggered = true;
