@@ -1,5 +1,5 @@
+import { errorIfNotInteger } from 'error-if-not-integer';
 import { getAdjacentAt } from '@writetome51/array-get-adjacent-at';
-import { errorIfNotInteger } from 'basic-data-handling/errorIfNotInteger';
 
 
 export function getBetween(numItemsToIgnoreAtEachEnd, array): any[] {

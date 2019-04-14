@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/array-get-between",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Function returns middle section of array",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -15,6 +15,8 @@
     "array",
     "manipulation",
     "return",
+    "middle",
+    "section",
     "data"
   ],
   "author": "Steve Thompson",
@@ -25,7 +27,7 @@
   "homepage": "https://github.com/writetome51/array-get-between#readme",
   "devDependencies": {},
   "dependencies": {
-    "basic-data-handling": "~1.0.15",
-    "@writetome51/array-get-adjacent-at": "~1.0.3"
+    "error-if-not-integer": "~1.0.0",
+    "@writetome51/array-get-adjacent-at": "~1.0.4"
   }
 }

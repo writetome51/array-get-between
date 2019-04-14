@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+var error_if_not_integer_1 = require("error-if-not-integer");
 var array_get_adjacent_at_1 = require("@writetome51/array-get-adjacent-at");
-var errorIfNotInteger_1 = require("basic-data-handling/errorIfNotInteger");
 function getBetween(numItemsToIgnoreAtEachEnd, array) {
-    errorIfNotInteger_1.errorIfNotInteger(numItemsToIgnoreAtEachEnd);
+    error_if_not_integer_1.errorIfNotInteger(numItemsToIgnoreAtEachEnd);
     if (numItemsToIgnoreAtEachEnd < 1)
         throw new Error('The number of items to' +
             ' preserve at each end must be at least 1');
